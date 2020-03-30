@@ -3,53 +3,410 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  .advantages__content
+    justify-content: space-around
 
+  .equipment-rent__box
+    width: 30%
+
+  .portfolio__wrap
+    max-width: 33%
+
+  .portfolio__box
+    width: 49%
+
+  .portfolio__box-max
+    width: 100%
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1100px)
+  .callback
+    .description
+      font-size: 18px
+
+  form input
+    width: 290px
+
+  .callback__content
+    max-width: 550px
+
+  .employees__box
+    margin: 0 0 30px
+
+  .footer-menu
+    max-width: 150px
+
+  .footer-box
+    h3
+      max-width: 180px
+      min-height: 36px
+
+@media only screen and (max-width: 940px)
+  .footer-box
+    width: 100%
+    margin: 0 0 25px
+    h3
+      max-width: none
+      min-height: auto
+      margin: 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .arrow-icon
+        display: flex
+        fill: #ffffff
+        width: 10px
+        height: 6px
+        transform: rotate(180deg)
+        transition: .3s ease
+    .logo
+      display: none
+    .click
+      .arrow-icon
+        transform: rotate(0)
+
+
+  .footer-menu
+    display: none
+    margin: 10px 0 0
+
+  footer
+    padding: 26px 0 23px
+    .d-tablet
+      display: flex
+      margin: 0 auto 44px
+      width: 235px
+
+  .footer-box__1
+    order: 1
+    margin: 0
+
+  .copyright
+    margin: 35px auto 0
+    text-align: center
+
+@media only screen and (max-width: 992px)
+  header .phone
+    font-size: 14px
+
+  .links-accent
+    font-size: 14px
+
+  .logo
+    width: 200px
+
+  .menu li a
+    font-size: 16px
+
+  .btn-accent
+    font-size: 16px
+    width: 260px
+    height: 50px
+
+  .main-text
+    max-width: 475px
+
+  .btn-up
+    width: 45px
+    height: 45px
+
+  h2
+    font-size: 35px
+
+  .retrofitting__box
+    margin: 10px auto 20px
+
+  .retrofitting__content
+    margin: 24px 0 0
+
+  .callback__image
+    max-width: 300px
+
+  form
+    flex-direction: column
+    align-items: flex-start
+    label
+      width: 290px
+      margin: 0 0 14px
+    .btn
+      width: 290px
+
+  .callback__content
+    max-width: 350px
+
+  .about__box
+    width: 145px
+    height: 145px
+    font-size: 14px
+    p
+      font-size: 40px
+
+  .about__content
+    width: calc(100% - 290px)
+
+  .about__info
+    width: 290px
+
+  .about__content .box-text
+    font-size: 14px
+
+  .scheme-of-work__box
+    max-width: 240px
+
+  .employees__content
+    justify-content: space-around
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 800px)
+  .advantages__box
+    max-width: 300px
+
+
+@media only screen and (max-width: 768px)
+  .btn-burger
+    display: flex
+
+  .header-bottom
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 280px
+    height: 100%
+    z-index: 5
+    background: url("../img/overlay-bg.jpg") no-repeat center
+      size: cover
+    margin: 0
+    overflow-y: auto
+    padding: 20px
+
+  .menu
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 30px
+    li
+      margin: 0 0 10px
+
+  .btn-close
+    display: flex
+
+  .d-tablet
+    display: flex
+
+  header
+    .header-box
+      display: none
+      margin: 0 0 30px
+    .d-tablet
+      display: flex
+
+  main
+    .container
+      flex-direction: column
+      align-items: center
+
+  .main-text
+    max-width: none
+    margin: 0 0 34px
+
+  h1
+    text-align: center
+
+  .equipment-rent__box
+    width: 48%
+
+  .about
+    padding: 49px 0 50px
+    .container
+      flex-direction: column
+      align-items: center
+    h6
+      font-size: 18px
+    h2
+      margin: 18px 0 28px
+
+  .about__content
+    width: 100%
+    padding: 0
+    margin: 0 0 28px
+
+  .scheme-of-work__content
+    flex-direction: column
+    align-items: center
+
+  .scheme-of-work__box
+    max-width: none
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 14px
+    margin: 0 auto 38px
+    &:last-child
+      margin: 0
+    h3
+      margin: 19px auto 15px
+
+  .scheme-of-work
+    padding: 49px 0 51px
+    h2
+      margin: 0 auto 39px
+
+  .employees__box
+    max-width: 135px
+    font-size: 14px
+    h3
+      font-size: 16px
+      margin: 0 0 9px
+
+  .employees__photo
+    height: 160px
+    margin: 0 0 20px
+
+  .portfolio__wrap
+    max-width: none
+    margin: 0 0 5px
+
+  .portfolio
+    margin: 0 0 51px
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 650px)
+  .advantages
+    padding: 36px 0 0
+    h2
+      margin: 0 auto 29px
+
+  .advantages__text
+    h3
+      font-size: 18px
+    p
+      display: none
+
+  .advantages__box
+    max-width: 50%
+    margin: 0 0 30px
+
+  .advantages__icon
+    height: 119px
+    margin: 0 auto 19px
+
+  .callback__image
+    display: none
+
+  .callback__content
+    max-width: none
+    align-items: center
+    justify-content: center
+    margin: 59px 0 50px
+
+  form
+    justify-content: center
+    align-items: center
+
+  .callback .description
+    margin: 24px 0 29px
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 576px)
+  .employees__box
+    margin: 0 10px 30px
+
+  .employees
+    padding: 57px 0 49px
+
+  .employees__content
+    margin: 29px auto 0
+
+@media only screen and (max-width: 480px)
+  header
+    padding: 8px 0
+    .links-accent
+      display: none
+
+  .logo
+    width: 174px
+
+  main
+    padding: 117px 0 33px
+    .phone
+      font-size: 24px
+      margin: 69px 0 0 0
+
+  h1
+    font-size: 30px
+    text-align: center
+
+  h2
+    font-size: 30px
+
+  .btn-accent
+    width: 181px
+    height: 44px
+    font-size: 14.5px
+
+  .d-mobile
+    display: flex
+
+  main .box-text
+    display: none
+
+  .btn-group .btn
+    margin: 0 0 17px
+
+  .btn-up
+    display: none
+
+  .equipment-rent__title
+    font-size: 14px
+    margin: 10px 0 0 0
+
+  .equipment-rent__box-photo
+    height: 81px
+
+  .equipment-rent__box
+    margin: 0 0 17px
+
+  .equipment-rent, .equipment-order
+    padding: 50px 0 33px
+
+  .description, .equipment-order .description
+    font-size: 18px
+    margin: 19px auto 22px
+
+  .retrofitting__box
+    display: none
+    &:nth-child(-n+6)
+      display: flex
+
+  .retrofitting .description
+    margin: 10px auto 0
+    h4
+      font-size: 18px
+      margin: 0 auto
+
+  .retrofitting
+    padding: 0 0 51px
+
+  .callback h2
+    max-width: 280px
+
+  .portfolio__box
+    height: 89px
+
+  .portfolio__box-max
+    height: 180px
+    order: -1
+
+  .portfolio__wrap
+    display: none
+    &:nth-child(-n+2)
+      display: flex
+    &:nth-child(2)
+      .portfolio__box-max
+        margin: 0 0 5px
 
 
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 
