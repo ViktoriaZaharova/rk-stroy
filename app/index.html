@@ -28,6 +28,44 @@
 
 <body>
 
+<div class="header-bottom header-bottom__mobile">
+
+    <div class="btn-close d-tablet"></div>
+
+    <nav class="navigation">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#about" class="go_to">О компании</a></li>
+            <li><a href="#order" class="go_to">Продажа</a></li>
+            <li><a href="#rent" class="go_to">Аренда</a></li>
+            <li><a href="#price" class="go_to">Стоимость</a></li>
+            <li><a href="#contacts" class="go_to">Контакты</a></li>
+            <li><a href="#portfolio" class="go_to">Наши объекты</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-box d-tablet">
+        <p>Прием заявок на почту:</p>
+        <a href="mailto:rk-stroy@inbox.ru" class="mail">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="text">rk-stroy@inbox.ru</span>
+        </a>
+    </div>
+
+    <div class="header-box d-tablet">
+        <p>По России бесплатно</p>
+        <a href="tel:+ 74870000000" class="phone">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            <span class="text">+ 7 (487) 000-00-00</span>
+        </a>
+    </div>
+
+</div>
+
 <header>
     <div class="container">
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
@@ -51,9 +89,9 @@
             </a>
         </div>
 
-        <a href="#" class="links-accent">ЗАКАЗАТЬ ЗВОНОК</a>
+        <a href="#callback-modal" class="btn btn-accent open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
 
-        <div class="header-bottom">
+        <div class="header-bottom header-bottom__desktop">
 
             <div class="btn-close d-tablet"></div>
 
@@ -692,6 +730,23 @@
 <div class="btn-up">
     <svg class="arrow-top"><use xlink:href="img/sprite.svg#arrow-top"></use></svg>
 </div>
+
+<div class="modal__div" id="callback-modal">
+    <div class="modal__wrapper">
+        <span class="modal__close"></span>
+        <h2>Обратный звонок</h2>
+
+        <form method="post" class="form">
+
+            <label><input type="text" name="name" placeholder="Ваше имя"></label>
+
+            <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
+
+            <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
+        </form>
+    </div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
 
 
 <script src="js/jquery.min.js"></script>

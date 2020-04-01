@@ -20,6 +20,11 @@
     width: 100%
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1160px)
+  header
+    .mail, .phone
+      font-size: 20px
+
 @media only screen and (max-width: 1100px)
   .callback
     .description
@@ -42,53 +47,12 @@
       max-width: 180px
       min-height: 36px
 
-@media only screen and (max-width: 940px)
-  .footer-box
-    width: 100%
-    margin: 0 0 25px
-    h3
-      max-width: none
-      min-height: auto
-      margin: 0
-      display: flex
-      align-items: center
-      justify-content: space-between
-      .arrow-icon
-        display: flex
-        fill: #ffffff
-        width: 10px
-        height: 6px
-        transform: rotate(180deg)
-        transition: .3s ease
-    .logo
-      display: none
-    .click
-      .arrow-icon
-        transform: rotate(0)
 
-
-  .footer-menu
-    display: none
-    margin: 10px 0 0
-
-  footer
-    padding: 26px 0 23px
-    .d-tablet
-      display: flex
-      margin: 0 auto 44px
-      width: 235px
-
-  .footer-box__1
-    order: 1
-    margin: 0
-
-  .copyright
-    margin: 35px auto 0
-    text-align: center
 
 @media only screen and (max-width: 992px)
-  header .phone
-    font-size: 14px
+  header
+    .phone, .mail
+      font-size: 14px
 
   .links-accent
     font-size: 14px
@@ -157,6 +121,57 @@
   .employees__content
     justify-content: space-around
 
+@media only screen and (max-width: 940px)
+  .footer-box
+    width: 100%
+    margin: 0 0 25px
+    h3
+      max-width: none
+      min-height: auto
+      margin: 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .arrow-icon
+        display: flex
+        fill: #ffffff
+        width: 10px
+        height: 6px
+        transform: rotate(180deg)
+        transition: .3s ease
+    .logo
+      display: none
+    .click
+      .arrow-icon
+        transform: rotate(0)
+
+
+  .footer-menu
+    display: none
+    margin: 10px 0 0
+
+  footer
+    padding: 26px 0 23px
+    .d-tablet
+      display: flex
+      margin: 0 auto 44px
+      width: 235px
+
+  .footer-box__1
+    order: 1
+    margin: 0
+
+  .copyright
+    margin: 35px auto 0
+    text-align: center
+
+  header .btn
+    width: 170px
+    height: 40px
+    font-size: 13px
+
+  .footer-menu
+    max-width: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 800px)
@@ -329,7 +344,7 @@
 @media only screen and (max-width: 480px)
   header
     padding: 8px 0
-    .links-accent
+    .links-accent, .btn
       display: none
 
   .logo
@@ -423,7 +438,11 @@
   .employees__box
     text-align: center
 
+  .modal__div
+    width: 98%
 
+  .modal__wrapper
+    padding: 30px 20px
 
 @media only screen and (max-width: 360px)
   .employees__photo
