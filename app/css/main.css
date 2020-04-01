@@ -208,13 +208,13 @@ button {
   font-size: 20px;
   font-weight: bold; }
   .btn-accent:hover {
-    background: #1c212e;
-    color: #fff; }
+    -webkit-box-shadow: 0 -5px 0 0 #d3a100 inset;
+            box-shadow: 0 -5px 0 0 #d3a100 inset; }
 
 header {
   z-index: 3;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 20px 0; }
@@ -225,6 +225,19 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+
+.fixed {
+  background: #1c212e; }
+  .fixed:before {
+    content: '';
+    position: absolute;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/overlay-bg.jpg") no-repeat center top;
+      background-size: cover; }
 
 .header-bottom {
   width: 100%;
@@ -499,7 +512,8 @@ main {
   font-size: 24px;
   font-weight: bold;
   margin: 20px 0 0 0;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .equipment-rent__box-photo {
   width: 100%;
@@ -774,9 +788,10 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   max-width: 290px;
   width: 100%;
   color: #fff;
@@ -822,9 +837,10 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   max-width: 210px;
   width: 100%;
   color: #0f1112;
@@ -999,7 +1015,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: .3s ease;
@@ -1329,13 +1345,11 @@ footer {
     .scheme-of-work h2 {
       margin: 0 auto 39px; }
   .employees__box {
-    max-width: 135px;
     font-size: 14px; }
     .employees__box h3 {
       font-size: 16px;
       margin: 0 0 9px; }
   .employees__photo {
-    height: 160px;
     margin: 0 0 20px; }
   .portfolio__wrap {
     max-width: none;
@@ -1382,7 +1396,14 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .employees__box {
-    margin: 0 10px 30px; }
+    margin: 0 auto 30px;
+    max-width: none;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .employees__photo {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .employees {
     padding: 57px 0 49px; }
   .employees__content {
@@ -1421,7 +1442,8 @@ footer {
     display: none; }
   .equipment-rent__title {
     font-size: 14px;
-    margin: 10px 0 0 0; }
+    margin: 10px 0 0 0;
+    text-align: center; }
   .equipment-rent__box-photo {
     height: 81px; }
   .equipment-rent__box {
@@ -1445,7 +1467,11 @@ footer {
   .retrofitting {
     padding: 0 0 51px; }
   .callback h2 {
-    max-width: 280px; }
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center; }
+  .callback .description {
+    text-align: center; }
   .portfolio__box {
     height: 89px; }
   .portfolio__box-max {
@@ -1460,4 +1486,10 @@ footer {
       display: -ms-flexbox;
       display: flex; }
     .portfolio__wrap:nth-child(2) .portfolio__box-max {
-      margin: 0 0 5px; } }
+      margin: 0 0 5px; }
+  .employees__box {
+    text-align: center; } }
+
+@media only screen and (max-width: 360px) {
+  .employees__photo {
+    height: 160px; } }

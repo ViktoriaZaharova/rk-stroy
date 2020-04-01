@@ -182,17 +182,15 @@ button
   color: #1c212e
   font-size: 20px
   font-weight: bold
-
   &:hover
-    background: #1c212e
-    color: #fff
+    box-shadow: 0 -5px 0 0 #d3a100 inset
 
 
 //header
 header
   z-index: 3
   width: 100%
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   padding: 20px 0
@@ -200,6 +198,20 @@ header
   .container
     justify-content: space-between
     align-items: center
+    
+.fixed
+  background: #1c212e
+
+  &:before
+    content: ''
+    position: absolute
+    opacity: .4
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: url("../img/overlay-bg.jpg") no-repeat center top
+      size: cover
 
 .header-bottom
   width: 100%
@@ -437,6 +449,7 @@ main
   font-weight: bold
   margin: 20px 0 0 0
   width: 100%
+  text-align: center
 
 .equipment-rent__box-photo
   width: 100%
@@ -660,7 +673,8 @@ label
 .scheme-of-work__box
   display: flex
   flex-direction: column
-  align-items: flex-start
+  align-items: center
+  text-align: center
   max-width: 290px
   width: 100%
   color: #fff
@@ -699,7 +713,8 @@ label
 .employees__box
   display: flex
   flex-direction: column
-  align-items: flex-start
+  align-items: center
+  text-align: center
   max-width: 210px
   width: 100%
   color: #0f1112
@@ -845,7 +860,7 @@ footer
   align-items: center
   justify-content: center
   bottom: 30px
-  right: 30px
+  left: 30px
   border-radius: 50%
   cursor: pointer
   transition: .3s ease

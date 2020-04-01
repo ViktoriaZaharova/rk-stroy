@@ -254,14 +254,13 @@
       margin: 0 auto 39px
 
   .employees__box
-    max-width: 135px
     font-size: 14px
     h3
       font-size: 16px
       margin: 0 0 9px
 
   .employees__photo
-    height: 160px
+    //height: 160px
     margin: 0 0 20px
 
   .portfolio__wrap
@@ -310,9 +309,16 @@
     margin: 24px 0 29px
 
 
+
 @media only screen and (max-width: 576px)
   .employees__box
-    margin: 0 10px 30px
+    margin: 0 auto 30px
+    max-width: none
+    padding: 0 10px
+    box-sizing: border-box
+
+  .employees__photo
+    box-shadow: none
 
   .employees
     padding: 57px 0 49px
@@ -362,6 +368,7 @@
   .equipment-rent__title
     font-size: 14px
     margin: 10px 0 0 0
+    text-align: center
 
   .equipment-rent__box-photo
     height: 81px
@@ -392,6 +399,11 @@
 
   .callback h2
     max-width: 280px
+    margin: 0 auto
+    text-align: center
+
+  .callback .description
+    text-align: center
 
   .portfolio__box
     height: 89px
@@ -408,5 +420,12 @@
       .portfolio__box-max
         margin: 0 0 5px
 
+  .employees__box
+    text-align: center
 
+
+
+@media only screen and (max-width: 360px)
+  .employees__photo
+    height: 160px
 

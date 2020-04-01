@@ -60,12 +60,12 @@
             <nav class="navigation">
                 <ul class="menu">
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Продажа</a></li>
-                    <li><a href="#">Аренда</a></li>
-                    <li><a href="#">Стоимость</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Наши объекты</a></li>
+                    <li><a href="#about" class="go_to">О компании</a></li>
+                    <li><a href="#order" class="go_to">Продажа</a></li>
+                    <li><a href="#rent" class="go_to">Аренда</a></li>
+                    <li><a href="#price" class="go_to">Стоимость</a></li>
+                    <li><a href="#contacts" class="go_to">Контакты</a></li>
+                    <li><a href="#portfolio" class="go_to">Наши объекты</a></li>
                 </ul>
             </nav>
 
@@ -209,7 +209,7 @@
 <!--advantages-->
 
 <!--equipment-rent-->
-<section class="equipment-rent">
+<section class="equipment-rent" id="rent">
     <div class="container">
         <h2>У нас Вы можете взять в аренду</h2>
         <div class="description">
@@ -254,7 +254,7 @@
 <!--equipment-rent-->
 
 <!--equipment-order-->
-<section class="equipment-order">
+<section class="equipment-order" id="order">
     <div class="container">
         <h2>У нас Вы можете купить</h2>
 
@@ -395,7 +395,7 @@
 
 
 <!--about -->
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about__content w-100">
             <h6>О компании</h6>
@@ -496,53 +496,63 @@
     <div class="container">
         <h2>СОТРУДНИКИ КОМПАНИИ</h2>
         <div class="employees__content w-100">
-            <div class="employees__box">
-                <div class="employees__photo"><img src="img/photo1.jpg" alt=""></div>
-                <div class="employees__text">
-                    <h3>Имя Фамилия</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore</p>
+            <div class="slide">
+                <div class="employees__box">
+                    <div class="employees__photo"><img src="img/photo1.jpg" alt=""></div>
+                    <div class="employees__text">
+                        <h3>Имя Фамилия</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore</p>
+                    </div>
                 </div>
             </div>
-            <div class="employees__box">
-                <div class="employees__photo"><img src="img/photo2.jpg" alt=""></div>
-                <div class="employees__text">
-                    <h3>Имя Фамилия</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore</p>
+            <div class="slide">
+                <div class="employees__box">
+                    <div class="employees__photo"><img src="img/photo2.jpg" alt=""></div>
+                    <div class="employees__text">
+                        <h3>Имя Фамилия</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore</p>
+                    </div>
                 </div>
             </div>
-            <div class="employees__box">
-                <div class="employees__photo"><img src="img/photo3.jpg" alt=""></div>
-                <div class="employees__text">
-                    <h3>Имя Фамилия</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore</p>
+            <div class="slide">
+                <div class="employees__box">
+                    <div class="employees__photo"><img src="img/photo3.jpg" alt=""></div>
+                    <div class="employees__text">
+                        <h3>Имя Фамилия</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore</p>
+                    </div>
                 </div>
             </div>
-            <div class="employees__box">
-                <div class="employees__photo"><img src="img/photo4.jpg" alt=""></div>
-                <div class="employees__text">
-                    <h3>Имя Фамилия</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore</p>
+            <div class="slide">
+                <div class="employees__box">
+                    <div class="employees__photo"><img src="img/photo4.jpg" alt=""></div>
+                    <div class="employees__text">
+                        <h3>Имя Фамилия</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore</p>
+                    </div>
                 </div>
             </div>
-            <div class="employees__box">
-                <div class="employees__photo"><img src="img/photo5.jpg" alt=""></div>
-                <div class="employees__text">
-                    <h3>Имя Фамилия</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore</p>
-                </div>
-            </div>
+           <div class="slide">
+               <div class="employees__box">
+                   <div class="employees__photo"><img src="img/photo5.jpg" alt=""></div>
+                   <div class="employees__text">
+                       <h3>Имя Фамилия</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                           labore et dolore</p>
+                   </div>
+               </div>
+           </div>
         </div>
     </div>
 </section>
 <!--employees-->
 
 <!--portfolio-->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="container">
         <h2>Объекты построены <br>
             с помощью <span class="color-accent">нашего оборудования</span></h2>
@@ -590,7 +600,7 @@
 <!--portfolio-->
 
 <!--footer-->
-<footer>
+<footer id="contacts">
     <div class="container">
         <a href="index.html" class="logo d-tablet"><img src="img/logo.png" alt=""></a>
         <div class="footer-box footer-box__1">
