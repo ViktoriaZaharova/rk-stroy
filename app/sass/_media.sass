@@ -25,6 +25,12 @@
     .mail, .phone
       font-size: 20px
 
+  .product-promo-price span:first-child
+    font-size: 24px
+
+  .product-promo-name
+    max-width: 160px
+
 @media only screen and (max-width: 1100px)
   .callback
     .description
@@ -120,6 +126,21 @@
 
   .employees__content
     justify-content: space-around
+
+  .page-content
+    width: 100%
+    padding: 0
+
+  .sidebar
+    width: 100%
+    order: 1
+    margin: 30px 0 0
+
+  .list-dots
+    padding: 0
+
+  .main-page
+    padding: 170px 0 50px
 
 @media only screen and (max-width: 940px)
   .footer-box
@@ -285,6 +306,17 @@
   .portfolio
     margin: 0 0 51px
 
+  .product-prices table th:first-child, .product-prices table td:first-child
+    padding: 5px
+
+  .main-page h2
+    font-size: 30px
+
+  .main-page
+    padding: 110px 0 50px
+
+  h1.title
+    font-size: 40px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 650px)
@@ -340,6 +372,27 @@
 
   .employees__content
     margin: 29px auto 0
+
+
+
+  .page-content-infoblock
+    .equipment-rent__content
+      justify-content: space-around
+      .equipment-rent__box
+        width: 100%
+
+  .product-promo-info
+    flex-wrap: wrap
+    padding: 10px
+    align-items: center
+
+  .product-promo-name
+    max-width: none
+    width: 100%
+    text-align: center
+    margin: 0 auto 10px
+
+
 
 @media only screen and (max-width: 480px)
   header
@@ -443,6 +496,10 @@
 
   .modal__wrapper
     padding: 30px 20px
+
+  .product-promo-info
+    flex-direction: column
+    align-items: center
 
 @media only screen and (max-width: 360px)
   .employees__photo

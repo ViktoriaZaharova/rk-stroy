@@ -142,7 +142,7 @@ h1
   color: #fff
   line-height: 0.97
 
-h2
+h2, h1.title
   color: #0f1112
   font-size: 60px
   text-align: center
@@ -150,6 +150,9 @@ h2
   font-weight: bold
   font-family: 'helios', sans-serif
   margin: 0 auto
+
+h1.title
+  margin: 0 auto 20px
 
 .color-accent
   color: #fabf00
@@ -203,7 +206,7 @@ header
     height: 50px
     font-size: 14px
     
-.fixed
+.fixed, .header
   background: #1c212e
 
   &:before
@@ -1017,6 +1020,268 @@ footer
     font-size: 26px
     text-align: center
     text-transform: uppercase
+
+//page
+.main-page
+  background: transparent
+  padding: 220px 0 50px
+  &:before, &:after
+    display: none
+  .container
+    align-items: flex-start
+    justify-content: space-between
+  h3
+    font-size: 22px
+    font-weight: bold
+    margin: 0 0 20px
+  h2
+    font-size: 40px
+
+
+.sidebar
+  width: 300px
+
+  .sidebar-menu__title
+    margin: 0
+    font-size: 18px
+
+.sidebar-menu__title
+  color: #fff
+  padding: 20px
+  margin: 0
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    color: #fabf00
+
+.sidebar-menu
+  background: #1c212e
+  > li
+      border-bottom: 1px solid rgba(250, 191, 0, 0.47)
+      &:last-child
+        border: none
+
+.submenu
+  margin: 0 0 20px
+  li
+    a
+      color: #fff
+      padding: 5px 20px
+      font-size: 14px
+      &:hover
+        background: #fabf00
+        color: #000
+
+.accordion-content
+  display: none
+
+.page-content
+  width: calc(100% - 300px)
+  padding: 0 0 0 30px
+  color: #000
+
+  p
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+  strong
+    font-weight: bold
+
+.content-product-info
+  margin: 0 0 30px
+
+.product-promo
+  position: relative
+  margin: 0 0 40px
+  width: 100%
+  img
+    width: 100%
+
+.product-promo-info
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 2
+  padding: 31px 22px 32px 36px
+  width: 100%
+  min-height: 130px
+  color: #fff
+  background: rgba(#0c3f7f, .7)
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .btn
+    width: 220px
+    font-size: 14px
+    text-transform: uppercase
+    height: 50px
+
+
+.product-promo-name
+  font-size: 24px
+  font-weight: bold
+  max-width: 250px
+
+.product-promo-price
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  font-size: 18px
+  span
+    &:first-child
+      font-size: 30px
+      font-weight: bold
+
+.product-prices table
+  margin-bottom: 6px
+  width: 100%
+  border-collapse: separate
+  border-spacing: 3px
+  td
+    height: 38px
+    text-align: center
+    font-size: 14px
+    vertical-align: middle
+  th
+    height: 46px
+    font-weight: bold
+    vertical-align: middle
+    
+.product-prices table th:first-child, .product-prices table td:first-child
+  padding: 0 10px 0 29px
+  text-align: left
+
+.product-prices table tr:nth-child(1) td
+  padding: 10px 32px
+  background: #fabf00
+  font-weight: bold
+  font-size: 20px
+
+.product-order-phone
+  background: #fabf00
+  padding: 10px 20px
+  text-align: center
+  a
+    color: #000
+    font-weight: bold
+    margin: 2px auto 0
+
+.description-block
+  margin: 30px 0 0 0
+
+
+.description-block-text
+  p
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+
+.description-block__image
+  width: 100%
+  margin: 0 0 20px
+
+.page-title
+  margin: 0 auto 20px
+
+.box-callback
+  width: 100%
+  text-align: center
+  padding: 20px 10px
+  margin: 20px auto
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.11)
+  p
+    font-weight: bold
+
+  .btn
+    width: 220px
+    height: 50px
+    margin: 10px auto
+    font-size: 14px
+    text-transform: uppercase
+
+.table-size
+  tr
+    &:nth-child(odd)
+      background: rgba(0, 0, 0, 0.11)
+
+
+.page-content-infoblock
+  margin: 40px 0
+  h2
+    margin: 0 auto 30px
+  .equipment-rent__box
+    max-width: 250px
+    .equipment-rent__title
+      font-size: 16px
+      font-weight: normal
+      text-align: left
+
+.list-dots
+  margin: 30px 0
+  padding: 0 0 0 30px
+  li
+    position: relative
+    padding: 0 0 0 20px
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      background: #fabf00
+
+.reviews-content
+  .equipment-rent__box-photo
+    width: 220px
+    height: 311px
+    margin: 0 auto
+
+.btn-pdf
+  width: 220px
+  height: 50px
+  font-size: 14px
+  text-transform: uppercase
+  img
+    margin: 0 0 0 5px
+
+.news-popular
+  padding: 20px
+  margin: 40px 0 0
+  background: #1c212e
+
+.news-popular__box
+  font-size: 12px
+  margin: 0 0 20px
+  padding: 0 0 10px
+  border-bottom: 1px solid rgba(250, 191, 0, 0.47)
+  &:last-child
+    margin: 0
+    border: none
+
+
+.news-popular__title
+  font-weight: bold
+  color: #fff
+  font-size: 16px
+  margin: 0 0 10px
+
+.product-prices
+  overflow-x: auto
+  overflow-y: hidden
+  width: 100%
+  display: block
+  -webkit-overflow-scrolling: touch
+  table
+    border-collapse: collapse
+    border-spacing: 0
+
 
 
 

@@ -1,5 +1,7 @@
 $('[data-fancybox="images"]').fancybox();
 $('[data-fancybox="portfolio"]').fancybox();
+$('[data-fancybox="image"]').fancybox();
+$('[data-fancybox="reviews"]').fancybox();
 
 // slick active
 $(window).on('load resize', function() {
@@ -106,3 +108,7 @@ $(document).ready(function () {
     });
 });
 //end
+
+$('.sidebar-menu__title').click(function () {
+   $(this).siblings('.accordion-content').slideToggle();
+});
