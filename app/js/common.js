@@ -13,8 +13,6 @@ $(window).on('load resize', function() {
             slidesToShow: 2,
             slidesToScroll: 2,
             arrows: false,
-            // enterMode: true,
-            // variableWidth: true,
             autoplay: true,
         });
     } else {
@@ -111,4 +109,46 @@ $(document).ready(function () {
 
 $('.sidebar-menu__title').click(function () {
    $(this).siblings('.accordion-content').slideToggle();
+});
+
+$('.recommended-products__slider').slick({
+    slidesToShow: 6,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 1460,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 680,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });

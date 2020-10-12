@@ -1282,8 +1282,329 @@ footer
     border-collapse: collapse
     border-spacing: 0
 
+/*main page*/
+.main
+  background: #211b28
+  padding: 320px 0 189px
+  &:before
+    background: url("../img/main/main-bg1.jpg") no-repeat center
+      size: cover
+    opacity: .2
+  &:after
+    display: none
+  .container
+    flex-direction: column
+    align-items: center
+  .btn
+    box-shadow: 0px 7px 0 0 #b58a00
+    height: 72px
+    max-width: 321px
+    font-size: 19.5px
+    font-weight: bold
+    &:hover
+      box-shadow: none
+
+.subtitle
+  text-align: center
+  width: 100%
+  margin: 25px auto 0
+  font-size: 29.5px
+  font-weight: 600
+
+.main-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+  margin: 50px 0 0
+
+.main-box
+  display: flex
+  align-items: center
+  margin: 0 50px 65px 0
+  font-size: 19.5px
+  font-weight: bold
+  &:last-child
+    margin-right: 0
+
+.main-icon
+  margin: 0 12px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.stages-work
+  padding: 120px 0 110px
+  .container
+    align-items: flex-start
+    justify-content: center
+
+.stages-work__box
+  text-align: center
+  max-width: 210px
+  width: 100%
+  color: #0f1112
+  font-weight: 300
+  position: relative
+  margin: 0 80px 0 0
+  &:last-child
+    margin: 0
+    &:before
+      display: none
+  &:before
+    content: ''
+    position: absolute
+    top: 110px
+    right: -130px
+    width: 165px
+    height: 27px
+    background: url("../img/main/line.png") no-repeat center
+      size: contain
+  &:nth-child(2)
+    &:before
+      transform: rotate(180deg)
+      top: 30px
+      right: -125px
+  h3
+    font-size: 18px
+    font-weight: bold
+    margin: 0 auto 14px
+
+.stages-work__icon
+  position: relative
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fff
+  box-shadow: 0 17px 38px 0 rgba(0, 0, 0, 0.1)
+  width: 153px
+  height: 153px
+  margin: 0 auto 30px
+  .number
+    position: absolute
+    right: 5px
+    top: 0
+    width: 43px
+    height: 43px
+    border: solid 2px #2562cc
+      radius: 50px
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    font-size: 30px
+    font-weight: 600
+    color: #2965cd
+
+//callback-main
+.callback-main
+  background: #211b28
+  padding: 34px 0 22px
+  &:before
+    background: url("../img/main/main-bg2.jpg") no-repeat center
+      size: cover
+    opacity: .05
+  .callback__image
+    margin: 0 -90px 0 0
+    max-width: 530px
+  .callback__content
+    margin: 95px 0
+
+//equipment
+.equipment
+  padding: 82px 0 69px
+  .container
+    align-items: center
+    justify-content: space-between
+  h2
+    margin: 0 0 39px
+    text-align: left
+  .box-text
+    font-size: 18px
+    line-height: 1.67
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.equipment-img
+  max-width: 639px
+  width: 100%
+
+.equipment-content
+  width: calc(100% - 639px)
+  padding: 0 0 0 40px
+
+.video-links
+  display: flex
+  align-items: center
+  margin: 40px 0 0
+  font-size: 24px
+  font-weight: bold
+  color: #0f1112
+
+.video-links__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  border-radius: 50%
+  margin: 0 20px 0 0
+  background: rgba(#fabf00, .5)
+  width: 67px
+  height: 67px
+  min-width: 67px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    width: 41px
+    height: 41px
+    background: #fabf00
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 0
+    height: 0
+    border-top: 7.5px solid transparent
+    border-left: 13px solid #0f1112
+    border-bottom: 7.5px solid transparent
+
+.main-advantages
+  background: #211b28
+  position: relative
+  padding: 140px 0 0
+  margin: 0 0 103px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: .1
+    background: url("../img/main/main-bg3.jpg") no-repeat center
+      size: cover
+  .container
+    align-items: stretch
+    flex-wrap: wrap
+    justify-content: space-between
+
+.img-hover
+  display: none
+
+.main-advantages__box
+  cursor: pointer
+  transition: .3s ease
+  width: 265px
+  height: 163px
+  margin: 0 0 110px
+  background: rgba(#12141f, .7)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  text-align: center
+  padding: 32px 27px 10px
+  color: #fff
+  font-size: 14px
+  font-weight: 500
+  &:hover
+    background: #fabf00
+    color: #0f1112
+    .img-hover
+      display: block
+    .img-default
+      display: none
+
+.main-advantages__icon
+  margin: 0 auto 15px
+
+//.recommended-products
+.recommended-products
+  margin: 0 0 100px
+  .container
+    max-width: 1555px
+
+.recommended-products__slider
+  width: 100%
+  padding: 0 80px
+  .slick-arrow
+    z-index: 1
+    width: 52px
+    height: 52px
+    border-radius: 50%
+    top: 30%
+    &:before
+      display: none
+  .slick-next
+    background: url("../img/main/next.png") #fabf00 no-repeat center
+      size: 14px
+    right: 0
+  .slick-prev
+    background: url("../img/main/back.png") #fabf00 no-repeat center
+      size: 14px
+    left: 0
 
 
+.recommended-products__sorting
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 80px
+
+.recommended-products__tag
+  text-align: center
+  color: #0f1112
+  font-weight: 500
+  font-size: 12.5px
+  padding: 7.5px 17px
+  border-radius: 15.5px
+  background-color: #f1f2f8
+
+.recommended-products__tag.active
+  background: #fabf00
+
+.recommended-products__card
+  width: 210px
+  height: 293px
+  border-radius: 5px
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1)
+  background-color: #ffffff
+  margin: 35px auto 50px
+  padding: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .btn
+    height: 34px
+    max-width: none
+    width: 100%
+    font-size: 14px
+    box-shadow: 0px 4px 0 0 #b58a00
+  h3
+    font-size: 17.5px
+    font-weight: bold
+    text-align: center
+    margin: 0 auto auto
+
+.recommended-products__img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  margin: 0 auto 20px
 
 @import "media"
 // Всегда в конце

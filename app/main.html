@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>РК-Строй</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="header-bottom header-bottom__mobile">
+
+    <div class="btn-close d-tablet"></div>
+
+    <nav class="navigation">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#about" class="go_to">О компании</a></li>
+            <li><a href="#order" class="go_to">Продажа</a></li>
+            <li><a href="#rent" class="go_to">Аренда</a></li>
+            <li><a href="#price" class="go_to">Стоимость</a></li>
+            <li><a href="#contacts" class="go_to">Контакты</a></li>
+            <li><a href="#portfolio" class="go_to">Наши объекты</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-box d-tablet">
+        <p>Прием заявок на почту:</p>
+        <a href="mailto:rk-stroy@inbox.ru" class="mail">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="text">rk-stroy@inbox.ru</span>
+        </a>
+    </div>
+
+    <div class="header-box d-tablet">
+        <p>По России бесплатно</p>
+        <a href="tel:+ 74870000000" class="phone">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            <span class="text">+ 7 (487) 000-00-00</span>
+        </a>
+    </div>
+
+</div>
+
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="header-box">
+            <p>Прием заявок на почту:</p>
+            <a href="mailto:rk-stroy@inbox.ru" class="mail">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                <span class="text">rk-stroy@inbox.ru</span>
+            </a>
+        </div>
+
+        <div class="header-box">
+            <p>По России бесплатно</p>
+            <a href="tel:+ 74870000000" class="phone">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span class="text">+ 7 (487) 000-00-00</span>
+            </a>
+        </div>
+
+        <a href="#callback-modal" class="btn btn-accent open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+
+        <div class="header-bottom header-bottom__desktop">
+
+            <div class="btn-close d-tablet"></div>
+
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#about" class="go_to">О компании</a></li>
+                    <li><a href="#order" class="go_to">Продажа</a></li>
+                    <li><a href="#rent" class="go_to">Аренда</a></li>
+                    <li><a href="#price" class="go_to">Стоимость</a></li>
+                    <li><a href="#contacts" class="go_to">Контакты</a></li>
+                    <li><a href="#portfolio" class="go_to">Наши объекты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-box d-tablet">
+                <p>Прием заявок на почту:</p>
+                <a href="mailto:rk-stroy@inbox.ru" class="mail">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <span class="text">rk-stroy@inbox.ru</span>
+                </a>
+            </div>
+
+            <div class="header-box d-tablet">
+                <p>По России бесплатно</p>
+                <a href="tel:+ 74870000000" class="phone">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="text">+ 7 (487) 000-00-00</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+<!--main-->
+<main class="main">
+    <div class="container">
+        <h1>Аренда опалубки</h1>
+        <div class="subtitle">Подзаголовок первого блока</div>
+
+        <div class="main-wrapper">
+            <div class="main-box">
+                <div class="main-icon"><img src="img/main/main-icon1.png" alt=""></div>
+                <p>Гарантия 5 лет</p>
+            </div>
+            <div class="main-box">
+                <div class="main-icon"><img src="img/main/main-icon2.png" alt=""></div>
+                <p>Гарантия 5 лет</p>
+            </div>
+            <div class="main-box">
+                <div class="main-icon"><img src="img/main/main-icon3.png" alt=""></div>
+                <p>Гарантия 5 лет</p>
+            </div>
+            <div class="main-box">
+                <div class="main-icon"><img src="img/main/main-icon4.png" alt=""></div>
+                <p>Гарантия 5 лет</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-accent">АРЕНДОВАТЬ</a>
+    </div>
+</main>
+<!--main-->
+
+<div class="stages-work">
+    <div class="container">
+
+        <div class="stages-work__box">
+            <div class="stages-work__icon">
+                <img src="img/main/contract.png" alt="">
+                <div class="number">1</div>
+            </div>
+            <div class="stages-work__text">
+                <h3>Оставили заявку</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+        </div>
+
+        <div class="stages-work__box">
+            <div class="stages-work__icon">
+                <img src="img/main/handshake.png" alt="">
+                <div class="number">2</div>
+            </div>
+            <div class="stages-work__text">
+                <h3>Заключили договор</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+        </div>
+
+        <div class="stages-work__box">
+            <div class="stages-work__icon">
+                <img src="img/main/bill.png" alt="">
+                <div class="number">3</div>
+            </div>
+            <div class="stages-work__text">
+                <h3>Оплата</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+        </div>
+
+        <div class="stages-work__box">
+            <div class="stages-work__icon">
+                <img src="img/main/location.png" alt="">
+                <div class="number">4</div>
+            </div>
+            <div class="stages-work__text">
+                <h3>Доставка до объекта</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--callback-->
+<section class="callback callback-main">
+    <div class="container">
+
+        <div class="callback__content">
+            <h2>Аренда оплубок от
+                3 500 руб/мес</h2>
+
+            <div class="description">Бесплатный расчет в день обращения.
+                Оставьте свои данные и наш менеджер
+                свяжется с Вами для оценки
+            </div>
+
+            <form method="post" class="form">
+                <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+                <button class="btn btn-accent" type="submit">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+
+        <div class="callback__image"><img src="img/main/main-img1.png" alt=""></div>
+    </div>
+</section>
+<!--callback-->
+
+<section class="equipment">
+    <div class="container">
+        <div class="equipment-img"><img src="img/main/main-img2.png" alt=""></div>
+        <div class="equipment-content">
+            <h2>Идеальная
+                комплектация</h2>
+
+            <div class="box-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est</p>
+            </div>
+
+            <a href="#" class="video-links">
+                <span class="video-links__icon"></span>
+                <span class="video-links__text">Смотреть видео</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="main-advantages">
+    <div class="container">
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/warehouse.png" class="img-default" alt="">
+                <img src="img/main/warehouse1.png" class="img-hover" alt="">
+            </div>
+            <p>Собственный <br>
+                большой склад
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/loader-truck1.png" class="img-default" alt="">
+                <img src="img/main/loader-truck.png" class="img-hover" alt="">
+            </div>
+            <p>Поможем в<br>
+                погрузке/разгрузке
+
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/list.png" class="img-default" alt="">
+                <img src="img/main/list1.png" class="img-hover" alt="">
+            </div>
+            <p>Широкий ассортимент
+                опалубки и комплектующих
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/navigator.png" class="img-default" alt="">
+                <img src="img/main/navigator1.png" class="img-hover" alt="">
+            </div>
+            <p>Склад в черте <br>
+                города
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/truck.png" class="img-default" alt="">
+                <img src="img/main/truck1.png" class="img-hover" alt="">
+            </div>
+            <p>Собственный парк
+                автомобилей
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/start-and-finish.png" class="img-default" alt="">
+                <img src="img/main/start-and-finish1.png" class="img-hover" alt="">
+            </div>
+            <p>Организуем помощь<br>
+                с доставкой
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/chronometer.png" class="img-default" alt="">
+                <img src="img/main/chronometer1.png" class="img-hover" alt="">
+            </div>
+            <p>Доставим <br>
+                оборудование в срок
+            </p>
+        </div>
+        <div class="main-advantages__box">
+            <div class="main-advantages__icon">
+                <img src="img/main/forklift.png" class="img-default" alt="">
+                <img src="img/main/forklift1.png" class="img-hover" alt="">
+            </div>
+            <p>Процесс погрузки
+                отработан и ускорен
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--portfolio-->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2>Объекты построены <br>
+            с помощью <span class="color-accent">нашего оборудования</span></h2>
+
+        <div class="portfolio__content w-100">
+            <div class="portfolio__wrap">
+                <a href="img/portfolio1.jpg" class="portfolio__box portfolio__box-max op-57"
+                   data-fancybox="portfolio"><img
+                        src="img/portfolio1.jpg"
+                        alt=""></a>
+                <a href="img/portfolio2.jpg" class="portfolio__box op-8" data-fancybox="portfolio"><img
+                        src="img/portfolio2.jpg"
+                        alt=""></a>
+                <a href="img/portfolio3.jpg" class="portfolio__box op-57" data-fancybox="portfolio"><img
+                        src="img/portfolio3.jpg"
+                        alt=""></a>
+            </div>
+
+            <div class="portfolio__wrap">
+
+                <a href="img/portfolio4.jpg" class="portfolio__box op-8" data-fancybox="portfolio"><img
+                        src="img/portfolio4.jpg"
+                        alt=""></a>
+                <a href="img/portfolio5.jpg" class="portfolio__box op-8" data-fancybox="portfolio"><img
+                        src="img/portfolio5.jpg"
+                        alt=""></a>
+                <a href="img/portfolio6.jpg" class="portfolio__box portfolio__box-max op-5"
+                   data-fancybox="portfolio"><img
+                        src="img/portfolio6.jpg"
+                        alt=""></a>
+            </div>
+
+            <div class="portfolio__wrap">
+                <a href="img/portfolio7.jpg" class="portfolio__box portfolio__box-max op-5"
+                   data-fancybox="portfolio"><img
+                        src="img/portfolio7.jpg"
+                        alt=""></a>
+                <a href="img/portfolio8.jpg" class="portfolio__box op-6" data-fancybox="portfolio"><img
+                        src="img/portfolio8.jpg"
+                        alt=""></a>
+                <a href="img/portfolio9.jpg" class="portfolio__box op-5" data-fancybox="portfolio"><img
+                        src="img/portfolio9.jpg"
+                        alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--portfolio-->
+
+<section class="recommended-products">
+    <div class="container">
+        <h2>Мы рекомендуем</h2>
+        
+        <div class="recommended-products__slider">
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="recommended-products__card">
+                    <div class="recommended-products__img"><img src="img/complect.jpg" alt=""></div>
+                    <h3>Название товара</h3>
+
+                    <a href="#" class="btn btn-accent">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommended-products__sorting">
+            <a href="#" class="recommended-products__tag active">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+            <a href="#" class="recommended-products__tag">Со скидкой</a>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer id="contacts">
+    <div class="container">
+        <a href="index.html" class="logo d-tablet"><img src="img/logo.png" alt=""></a>
+        <div class="footer-box footer-box__1">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="header-box">
+                <p>Прием заявок на почту:</p>
+                <a href="mailto:rk-stroy@inbox.ru" class="mail">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <span class="text">rk-stroy@inbox.ru</span>
+                </a>
+            </div>
+
+            <div class="header-box">
+                <p>По России бесплатно</p>
+                <a href="tel:+ 74870000000" class="phone">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="text">+ 7 (487) 000-00-00</span>
+                </a>
+            </div>
+
+            <div class="copyright">© 2020 Аренда Опалубки
+                в Воронеже. Все права защищены.
+                ООО "Компания "РК-Строй"
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>ИНФОРМАЦИЯ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оборудование</a></li>
+                <li><a href="#">Б/У товары</a></li>
+                <li><a href="#">Заявка</a></li>
+                <li><a href="#">Расчет</a></li>
+                <li><a href="#">Заключение договора</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>АРЕНДА ОБОРУДОВАНИЯ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">Опалубка стен</a></li>
+                <li><a href="#">Опалубка колонн</a></li>
+                <li><a href="#">Опалубка перекрытий</a></li>
+                <li><a href="#">Опалубка для фундамента</a></li>
+                <li><a href="#">Рамные леса</a></li>
+                <li><a href="#">Станции прогрева</a></li>
+                <li><a href="#">Станки для гибки арматуры</a></li>
+                <li><a href="#">Станки для резки арматуры</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>КОМПЛЕКТУЮЩИЕ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">Замки клиновые</a></li>
+                <li><a href="#">Замки универсальные</a></li>
+                <li><a href="#">Винты стяжные, гайки</a></li>
+                <li><a href="#">Подкосы</a></li>
+                <li><a href="#">Захваты монтажные</a></li>
+                <li><a href="#">Зажимы пружинные</a></li>
+                <li><a href="#">Треноги, унивилки</a></li>
+                <li><a href="#">Балка перекрытий</a></li>
+                <li><a href="#">Фанера ламинированная</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>СОПУТСТВУЮЩИЕ ТОВАРЫ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">Фиксаторы арматуры</a></li>
+                <li><a href="#">Эмульсол</a></li>
+                <li><a href="#">Прогревочные провода</a></li>
+                <li><a href="#">Глубинные вибраторы</a></li>
+                <li><a href="#">Фундаментные болты</a></li>
+                <li><a href="#">Тенты для укрытия бетона</a></li>
+                <li><a href="#">Бадьи, ящики</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+<div class="btn-up">
+    <svg class="arrow-top">
+        <use xlink:href="img/sprite.svg#arrow-top"></use>
+    </svg>
+</div>
+
+<div class="modal__div" id="callback-modal">
+    <div class="modal__wrapper">
+        <span class="modal__close"></span>
+        <h2>Обратный звонок</h2>
+
+        <form method="post" class="form">
+
+            <label><input type="text" name="name" placeholder="Ваше имя"></label>
+
+            <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
+
+            <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
+        </form>
+    </div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
