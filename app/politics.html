@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>РК-Строй</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="header-bottom header-bottom__mobile">
+
+    <div class="btn-close d-tablet"></div>
+
+    <nav class="navigation">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#about" class="go_to">О компании</a></li>
+            <li><a href="#order" class="go_to">Продажа</a></li>
+            <li><a href="#rent" class="go_to">Аренда</a></li>
+            <li><a href="#price" class="go_to">Стоимость</a></li>
+            <li><a href="#contacts" class="go_to">Контакты</a></li>
+            <li><a href="#portfolio" class="go_to">Наши объекты</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-box d-tablet">
+        <p>Прием заявок на почту:</p>
+        <a href="mailto:rk-stroy@inbox.ru" class="mail">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="text">rk-stroy@inbox.ru</span>
+        </a>
+    </div>
+
+    <div class="header-box d-tablet">
+        <p>По России бесплатно</p>
+        <a href="tel:+ 74870000000" class="phone">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            <span class="text">+ 7 (487) 000-00-00</span>
+        </a>
+    </div>
+
+</div>
+
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="header-box">
+            <p>Прием заявок на почту:</p>
+            <a href="mailto:rk-stroy@inbox.ru" class="mail">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                <span class="text">rk-stroy@inbox.ru</span>
+            </a>
+        </div>
+
+        <div class="header-box">
+            <p>По России бесплатно</p>
+            <a href="tel:+ 74870000000" class="phone">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span class="text">+ 7 (487) 000-00-00</span>
+            </a>
+        </div>
+
+        <a href="#callback-modal" class="btn btn-accent open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+
+        <div class="header-bottom header-bottom__desktop">
+
+            <div class="btn-close d-tablet"></div>
+
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#about" class="go_to">О компании</a></li>
+                    <li><a href="#order" class="go_to">Продажа</a></li>
+                    <li><a href="#rent" class="go_to">Аренда</a></li>
+                    <li><a href="#price" class="go_to">Стоимость</a></li>
+                    <li><a href="#contacts" class="go_to">Контакты</a></li>
+                    <li><a href="#portfolio" class="go_to">Наши объекты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-box d-tablet">
+                <p>Прием заявок на почту:</p>
+                <a href="mailto:rk-stroy@inbox.ru" class="mail">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <span class="text">rk-stroy@inbox.ru</span>
+                </a>
+            </div>
+
+            <div class="header-box d-tablet">
+                <p>По России бесплатно</p>
+                <a href="tel:+ 74870000000" class="phone">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="text">+ 7 (487) 000-00-00</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+<!--main-->
+<main class="main main-politics">
+    <div class="container">
+        <h1>Политика конфиденциальности</h1>
+        <div class="subtitle">Делаем сайт удобным, сохраняя ваши интересы</div>
+
+        <div class="main-wrapper">
+            <div class="main-box">
+                <div class="main-icon"><img src="img/politics/zakaz.png" alt=""></div>
+                <p>Для обработки
+                    ваших заказовт</p>
+            </div>
+            <div class="main-box">
+                <div class="main-icon"><img src="img/politics/supplier.png" alt=""></div>
+                <p>Оповещение <br>
+                    о поступлении
+                    товара</p>
+            </div>
+            <div class="main-box">
+                <div class="main-icon"><img src="img/politics/razrabotka-predlogeny.png" alt=""></div>
+                <p>Для разработки
+                    индивидуальных
+                    предложений</p>
+            </div>
+            <div class="main-box">
+                <div class="main-icon"><img src="img/politics/servis-2.png" alt=""></div>
+                <p>Для улучшения сервиса</p>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!--main-->
+
+<section class="official-resources">
+    <div class="container">
+        <h2>Наши официальные интернет-ресурсы</h2>
+
+        <div class="official-resources__wrapper">
+            <a href="http://www.rk-stroy36.ru " target="_blank" class="official-resources-links">www.rk-stroy36.ru </a>
+            <a href="https://vk.com/arenda_opalubka_voronezh" target="_blank" class="official-resources-links">vk.com/arenda_opalubka_voronezh</a>
+            <a href="https://instagram.com/rk_stroy36/ " target="_blank" class="official-resources-links">instagram.com/rk_stroy36/ </a>
+        </div>
+    </div>
+</section>
+
+<div class="information information-bg color-white bg-brown">
+    <div class="container">
+        <div class="box-text">
+            <p>Заполнение форм на сайте <a href="http://rk-stroy36.ru" class="links">rk-stroy36.ru</a>, оформление заказа, оставление заявок,
+                подписка и другие операции с сайтом, в том числе: Ф.И.О., e-mail, номер телефона,
+                адрес доставки, интересы, а также другой информации о пользователях и подписчиках
+                сайта и социальных групп - означают согласие на обработку ваших персональных данных.
+                Она позволяет корректно обрабатывать заказы клиентов, оперативно и направлено
+                обрабатывать заявки, повышать качество обслуживания, более детально знать потребности
+                посетителей. </p>
+        </div>
+    </div>
+</div>
+
+<div class="information information-technical">
+    <div class="container">
+        <div class="box-text">
+            <p>Техническая информация о посещении сайта:  IP-адрес, домен, браузер, операционная
+                система, дата и время посещения и другое является открытой, мы не несем
+                ответственности за ее разглашение. Эта информация является обезличенной и может
+                быть использована с целью соблюдения интересов посетителей сайта компании в выдаче
+                контента, статистических целях. Такие данные, а также счетчики посещаемости позволяют
+                нам сделать сайт более удобным для клиентов и оптимизировать его в Глобальной сети. Наш
+                сайт, как и многие другие, использует cookie-файлы. Вы можете отключить их у себя в
+                браузере. Нам они необходимы для обеспечения быстрой и удобной работы с сайтом
+                (например, чтобы пользователю не приходилось снова заполнять те же данные).</p>
+        </div>
+    </div>
+</div>
+
+<div class="information information-about color-white bg-brown">
+    <div class="container">
+        <div class="box-text">
+            <p>Сайт компании РК-Строй может содержать ссылки на сторонние ресурсы сходной или
+                дополняющей нашей тематики, сайты партнеров, а также встраиваемое содержимое с
+                других сайтов (например, видео). При этом, к сожалению, мы не можем гарантировать
+                соблюдение политики конфиденциальности сторонними ресурсами.</p>
+
+                <p>Мы можем передавать данные наших клиентов 3-м лицам с целью исполнения заказов
+                    клиентов. Третьими лицами могут выступать при этом: почтовые, курьерские и др. службы.</p>
+
+                <p>Информация из форм сайта может применяться для рекламных рассылок, которые
+                позволяют нам держать пользователей в курсе цен, информировать об обновлении
+                ассортимента и др. Если вы не хотите получать такие рассылки – вы можете отписаться,
+                перейдя по специальной ссылке внизу письма. </p>
+        </div>
+    </div>
+</div>
+
+<div class="information information-footer">
+    <div class="container">
+        <div class="box-text">
+           <p> Если вы хотите сохранить свои данные в конфиденциальности в Глобальной сети –
+               зашифруйте IP, не вводите свой e-mail в формы или не посещайте интернет-ресурс</p>
+
+            <p>Также, вы можете попросить удалить вашу персональную информацию. С этой целью
+                нужно отправить письмо на электронную почту нашей компании. Это действие не
+                распространяется на данные, которые мы обязаны хранить в административных целях,
+                по закону или в целях безопасности.</p>
+        </div>
+        <div class="information-img"><img src="img/politics/s1200.png" alt=""></div>
+        <h2>С заботой о клиентах</h2>
+    </div>
+</div>
+
+<!--footer-->
+<footer id="contacts">
+    <div class="container">
+        <a href="index.html" class="logo d-tablet"><img src="img/logo.png" alt=""></a>
+        <div class="footer-box footer-box__1">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="header-box">
+                <p>Прием заявок на почту:</p>
+                <a href="mailto:rk-stroy@inbox.ru" class="mail">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <span class="text">rk-stroy@inbox.ru</span>
+                </a>
+            </div>
+
+            <div class="header-box">
+                <p>По России бесплатно</p>
+                <a href="tel:+ 74870000000" class="phone">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="text">+ 7 (487) 000-00-00</span>
+                </a>
+            </div>
+
+            <div class="copyright">© 2020 Аренда Опалубки
+                в Воронеже. Все права защищены.
+                ООО "Компания "РК-Строй"
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>ИНФОРМАЦИЯ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оборудование</a></li>
+                <li><a href="#">Б/У товары</a></li>
+                <li><a href="#">Заявка</a></li>
+                <li><a href="#">Расчет</a></li>
+                <li><a href="#">Заключение договора</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>АРЕНДА ОБОРУДОВАНИЯ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">Опалубка стен</a></li>
+                <li><a href="#">Опалубка колонн</a></li>
+                <li><a href="#">Опалубка перекрытий</a></li>
+                <li><a href="#">Опалубка для фундамента</a></li>
+                <li><a href="#">Рамные леса</a></li>
+                <li><a href="#">Станции прогрева</a></li>
+                <li><a href="#">Станки для гибки арматуры</a></li>
+                <li><a href="#">Станки для резки арматуры</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>КОМПЛЕКТУЮЩИЕ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">Замки клиновые</a></li>
+                <li><a href="#">Замки универсальные</a></li>
+                <li><a href="#">Винты стяжные, гайки</a></li>
+                <li><a href="#">Подкосы</a></li>
+                <li><a href="#">Захваты монтажные</a></li>
+                <li><a href="#">Зажимы пружинные</a></li>
+                <li><a href="#">Треноги, унивилки</a></li>
+                <li><a href="#">Балка перекрытий</a></li>
+                <li><a href="#">Фанера ламинированная</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>СОПУТСТВУЮЩИЕ ТОВАРЫ
+                <svg class="arrow-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                </svg>
+            </h3>
+            <ul class="footer-menu">
+                <li><a href="#">Фиксаторы арматуры</a></li>
+                <li><a href="#">Эмульсол</a></li>
+                <li><a href="#">Прогревочные провода</a></li>
+                <li><a href="#">Глубинные вибраторы</a></li>
+                <li><a href="#">Фундаментные болты</a></li>
+                <li><a href="#">Тенты для укрытия бетона</a></li>
+                <li><a href="#">Бадьи, ящики</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+<div class="btn-up">
+    <svg class="arrow-top">
+        <use xlink:href="img/sprite.svg#arrow-top"></use>
+    </svg>
+</div>
+
+<div class="modal__div" id="callback-modal">
+    <div class="modal__wrapper">
+        <span class="modal__close"></span>
+        <h2>Обратный звонок</h2>
+
+        <form method="post" class="form">
+
+            <label><input type="text" name="name" placeholder="Ваше имя"></label>
+
+            <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
+
+            <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
+        </form>
+    </div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

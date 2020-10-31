@@ -1606,5 +1606,86 @@ footer
   width: 100%
   margin: 0 auto 20px
 
+//page politics
+.main-politics
+  background: #211b28
+  &:before
+    display: none
+  h1
+    font-size: 85px
+  .main-box
+    width: 24%
+    margin: 0 0 50px
+    align-items: flex-start
+  .main-icon
+    width: 49px
+    min-width: 49px
+  .main-wrapper
+    align-items: flex-start
+
+.official-resources
+  padding: 80px 0 200px
+
+.official-resources__wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 128px 0 0
+
+
+.official-resources-links
+  margin: 0 0 30px
+  color: #000000
+  font-size: 18px
+  font-weight: bold
+
+.information
+  padding: 105px 0 280px
+  position: relative
+  a
+    display: inline
+    color: #fff
+  .box-text
+    font-size: 30px
+    font-weight: 500
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+.information-bg
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: 100%
+    background: url('../img/politics/bg-politics1.jpg') no-repeat center
+      size: cover
+    opacity: .05
+
+.bg-brown
+  background: #211b28
+
+.color-white
+  color: #fff
+
+.information-technical
+  padding: 110px 0 360px
+
+.information-about
+  padding: 102px 0 172px
+
+.information-footer
+  padding: 110px 0 300px
+
+.information-img
+  margin: 48px auto 2px
+
+
 @import "media"
 // Всегда в конце
